@@ -1,4 +1,6 @@
+@import "~reset-css/reset.css";
 @import "~antd/dist/antd.css";
+@import "./vars.scss";
 
 body,
 html,
@@ -6,4 +8,8 @@ html,
 .wrapper {
   height: 100%;
   color: #202002;
+}
+
+body {
+  background-color: #bf6b8e;
 }
