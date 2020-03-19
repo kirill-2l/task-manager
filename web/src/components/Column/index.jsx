@@ -1,19 +1,16 @@
 import React from "react";
 import { Button } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
-import { PreviewTask } from "components";
+import { TasksList } from "containers";
 
 import "./Column.scss";
-const Column = ({ title, tasks }) => {
+const Column = ({ title, _id }) => {
   return (
     <div className="column">
       <div className="column__content">
         <h4 className="column__header">{title}</h4>
         <div className="column__body">
-          {tasks.map((task) => {
-            // console.log({...task})
-            return <PreviewTask key={Math.random()} {...task} />;
-          })}
+          <TasksList columnId={_id} />
         </div>
         <div className="column__footer">
           <Button
