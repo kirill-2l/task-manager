@@ -30,10 +30,15 @@
     padding: 0 4px;
     margin: 0 4px;
   }
+  &__footer {
+    padding: 0 8px 8px;
+    &-controls {
+      display: flex;
+      align-items: center;
+    }
+  }
   &__add-btn {
-    padding-left: 5px;
     text-align: left;
-    margin: 0 8px 8px;
     color: inherit;
     transition: background-color color linear 0.3s;
     &:hover {

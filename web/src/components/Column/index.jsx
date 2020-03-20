@@ -1,7 +1,5 @@
 import React from "react";
-import { Button } from "antd";
-import { PlusOutlined } from "@ant-design/icons";
-import { TasksList } from "containers";
+import { TasksList, AddTask } from "containers";
 
 import "./Column.scss";
 const Column = ({ title, _id }) => {
@@ -13,13 +11,7 @@ const Column = ({ title, _id }) => {
           <TasksList columnId={_id} />
         </div>
         <div className="column__footer">
-          <Button
-            className="column__add-btn"
-            type="link"
-            icon={<PlusOutlined />}
-          >
-            Добавить еще одну карточку
-          </Button>
+          <AddTask columnId={_id}/>
         </div>
       </div>
     </div>
