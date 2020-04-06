@@ -5,14 +5,12 @@ import { Link } from "react-router-dom";
 import "./Task.scss";
 
 const Task = props => {
-  const { title, _id } = props;
+  const { title, id } = props;
   return (
     <Link
       to={{
-        pathname: `/card/${_id}`,
-        search: "?sort=name",
-        hash: "#the-hash",
-        id: _id
+        pathname: `/card/${id}`,
+        id: id
       }}
       className="preview-task"
     >

@@ -39,18 +39,18 @@ const TaskDetail = ({ task }) => {
         </div>
         <div className="t-detail__item">
           <div className="t-detail__title">Задача обновлена</div>
-          <div className="t-detail__description">
+          {/* <div className="t-detail__description">
             {format(Date.parse(task.createdAt), "yyyy dd.MM p", {
               locale: ru
             })}
-          </div>
+          </div> */}
         </div>
         <div className="t-detail__item">
           <div className="t-detail__title">Задача создана</div>
           <div className="t-detail__description">
-            {format(Date.parse(task.createdAt), "yyyy dd.MM p", {
+            {/* {format(Date.parse(task.createdAt), "yyyy dd.MM p", {
               locale: ru
-            })}
+            })} */}
           </div>
         </div>
         <div className="t-detail__item">

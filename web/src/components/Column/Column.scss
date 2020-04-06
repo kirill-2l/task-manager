@@ -20,6 +20,9 @@
     border-radius: 3px;
     background-color: $gray;
     max-height: 100%;
+    // background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 10 30;
   }
   &__header {
     padding: 10px 8px;

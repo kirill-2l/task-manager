@@ -1,6 +1,6 @@
 import React from "react";
 import "./Board.scss";
-import { Column } from "components";
+import { Column } from "containers";
 const Board = ({ columns, tasks }) => {
   return (
     <div className="board">

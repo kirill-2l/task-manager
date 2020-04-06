@@ -1,23 +1,34 @@
 import React from "react";
-import { connect } from "react-redux";
-import { Task } from "components";
-import orderBy from "lodash/orderBy";
 
-const TasksList = ({ tasks, columnId }) => {
-  const filteredTasks = tasks && tasks.filter(item =>
-    item.columnId === columnId ? item : null
-  );
+import { Draggable } from "react-beautiful-dnd";
+
+import { Task } from "components";
+
+const TasksList = ({ tasks }) => {
   return (
     <div className="tasks-list">
-      {filteredTasks &&
-        orderBy(filteredTasks, "order", "asc").map(item => (
-          <Task key={item._id} {...item} />
+      {tasks &&
+        tasks.map((item, index) => (
+          <Draggable key={item._id} draggableId={item._id} index={index}>
+            {provided => (
+              <div
+                ref={provided.innerRef}
+                {...provided.draggableProps}
+                {...provided.dragHandleProps}
+              >
+                <Task
+                  innerRef={provided.innerRef}
+                  {...provided.draggableProps}
+                  {...provided.dragHandleProps}
+                  title={item.title}
+                  id={item._id}
+                />
+              </div>
+            )}
+          </Draggable>
         ))}
     </div>
   );
 };
 
-const mapStateToProps = ({ tasks }) => ({
-  tasks: tasks.items
-});
-export default connect(mapStateToProps)(TasksList);
+export default TasksList;

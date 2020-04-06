@@ -1,0 +1,18 @@
+@import "styles/vars.scss";
+
+.add-item {
+  &__controls {
+    display: flex;
+    align-items: center;
+  }
+  &__btn.ant-btn {
+    color: #000;
+    &--active {
+      background-color: $green;
+      color: #fff;
+      &:hover {
+        background-color: darken($color: $green, $amount: 15);
+      }
+    }
+  }
+}

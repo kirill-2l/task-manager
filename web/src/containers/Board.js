@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import { DragDropContext } from "react-beautiful-dnd";
+
 import { Board as BaseBoard } from "components";
 import { columnsActions } from "redux/actions";
 import { tasksActions } from "redux/actions";
@@ -16,7 +18,11 @@ const Board = ({ tasks, columns, columnsActions, tasksActions }) => {
       tasksActions.fetchTasks();
     }
   }, []);
-  return <BaseBoard columns={columns} />;
+  return (
+    <DragDropContext>
+      <BaseBoard columns={columns} />
+    </DragDropContext>
+  );
 };
 
 const mapStateToProps = ({ columns, tasks }) => ({
