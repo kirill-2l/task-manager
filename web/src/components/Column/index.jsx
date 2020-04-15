@@ -11,14 +11,10 @@ const Column = ({ title, columnId, tasks }) => {
         <h4 className="column__header">{title}</h4>
         <div className="column__body">
           <Droppable droppableId={columnId}>
-            {provided => (
-              <TasksList
-                innerRef={provided.innerRef}
-                tasks={tasks}
-                {...provided.droppableProps}
-              >
-
-              </TasksList>
+            {(provided) => (
+              <div ref={provided.innerRef} {...provided.droppableProps}>
+                <TasksList tasks={tasks}>{provided.placeholder}</TasksList>
+              </div>
             )}
           </Droppable>
         </div>

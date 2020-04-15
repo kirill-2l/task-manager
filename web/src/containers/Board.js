@@ -18,8 +18,14 @@ const Board = ({ tasks, columns, columnsActions, tasksActions }) => {
       tasksActions.fetchTasks();
     }
   }, []);
+
+  const onDragEnd = (result) => {
+    const {destinationm, source, draggableId} = result;
+    console.log(result);
+  };
+
   return (
-    <DragDropContext>
+    <DragDropContext onDragEnd={onDragEnd}>
       <BaseBoard columns={columns} />
     </DragDropContext>
   );
@@ -27,11 +33,11 @@ const Board = ({ tasks, columns, columnsActions, tasksActions }) => {
 
 const mapStateToProps = ({ columns, tasks }) => ({
   columns: columns.items,
-  tasks: tasks.items
+  tasks: tasks.items,
 });
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   tasksActions: bindActionCreators(tasksActions, dispatch),
-  columnsActions: bindActionCreators(columnsActions, dispatch)
+  columnsActions: bindActionCreators(columnsActions, dispatch),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Board);

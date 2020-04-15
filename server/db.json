@@ -5,21 +5,24 @@
       "title": "Верстка",
       "createdAt": "Mon Mar 26 1973 08:09:41 GMT+0000 (UTC)",
       "updatedAt": "Sun Apr 16 1995 11:55:55 GMT+0000 (UTC)",
-      "order": 0
+      "order": 0,
+      "tasksId": ["5e725ae7d4bf421b921a6989", "5e725ae7e0c3f81981f81556"]
     },
     {
       "_id": "5e71f36e2797200cf8fd933b",
       "title": "Дизайн",
       "createdAt": "Fri Aug 19 1988 17:47:41 GMT+0000 (UTC)",
       "updatedAt": "Mon Mar 18 1996 15:07:58 GMT+0000 (UTC)",
-      "order": 1
+      "order": 1,
+      "tasksId": ["5e725ae7834f41ba51bebb3f", "5e725ae7795121bbed73717e", "5e725ae76718e43272eedebf", "5e725ae7f03b88d2a06779d0"]
     },
     {
       "_id": "5e71f36e1fa7639a0d5da1aa",
       "title": "Программирование",
       "createdAt": "Sun Jan 06 1985 19:42:20 GMT+0000 (UTC)",
       "updatedAt": "Thu Sep 22 1994 02:21:36 GMT+0000 (UTC)",
-      "order": 2
+      "order": 2,
+      "tasksId": ["5e725ae7384c8508074d1904", "5e725ae78d05830635ad50d6", "5e725ae74f14d102707cf5ad", "5e725ae7c814e24d5368c14e"]
     }
   ],
   "tasks": [
@@ -41,8 +44,7 @@
         }
       ],
       "order": 0,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae7e0c3f81981f81556",
@@ -62,8 +64,7 @@
         }
       ],
       "order": 1,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae7834f41ba51bebb3f",
@@ -83,8 +84,7 @@
         }
       ],
       "order": 2,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae7795121bbed73717e",
@@ -104,8 +104,7 @@
         }
       ],
       "order": 3,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae76718e43272eedebf",
@@ -125,8 +124,7 @@
         }
       ],
       "order": 4,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae7f03b88d2a06779d0",
@@ -146,8 +144,7 @@
         }
       ],
       "order": 5,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae7384c8508074d1904",
@@ -167,8 +164,7 @@
         }
       ],
       "order": 6,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae78d05830635ad50d6",
@@ -188,8 +184,7 @@
         }
       ],
       "order": 7,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae74f14d102707cf5ad",
@@ -209,8 +204,7 @@
         }
       ],
       "order": 8,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
+      "previewImg": "https://google.com"
     },
     {
       "_id": "5e725ae7c814e24d5368c14e",
@@ -230,78 +224,7 @@
         }
       ],
       "order": 9,
-      "previewImg": "https://google.com",
-      "columnId": "5e71f36e1fa7639a0d5da1aa"
-    },
-    {
-      "title": "asdasdasd",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "-Ke8_g2"
-    },
-    {
-      "title": "asdasdasdasd",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "pcoOcMV"
-    },
-    {
-      "title": "asdasdasd",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "7b-TFlB"
-    },
-    {
-      "title": "asdasdasd",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "1uGpDnG"
-    },
-    {
-      "title": "asdasdasd",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "JYN5Giy"
-    },
-    {
-      "title": "kirill2",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "Mg6R44L"
-    },
-    {
-      "title": "kirilll6",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "ocb49Ya"
-    },
-    {
-      "title": "aaaa",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "c-e-o5o"
-    },
-    {
-      "title": "adadsadsasd",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "FVmuCKd"
-    },
-    {
-      "title": "test7",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "OdY_W_Z"
-    },
-    {
-      "title": "test8",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "Q7uqDC_"
-    },
-    {
-      "title": "test9\n",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "Icy5G8l"
-    },
-    {
-      "title": "test10\n",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "uNB0AiN"
-    },
-    {
-      "title": "test1111",
-      "columnId": "5e71f36e2797200cf8fd933b",
-      "_id": "HQY7Iz0"
+      "previewImg": "https://google.com"
     }
   ]
 }
