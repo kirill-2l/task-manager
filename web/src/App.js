@@ -1,19 +1,16 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
 
-import { Auth, Home } from "pages";
-import { TaskDetail } from "containers";
+import { connect } from "react-redux";
 
-function App() {
-  return (
-    <div className="wrapper">
-      <Switch>
-        <Route exact path={["/login", "/register"]} children={Auth} />
-        <Route path="/" children={Home} />
-      </Switch>
-      <Route path="/card/:id" component={TaskDetail} />
-    </div>
-  );
-}
+import { LoggedIn, LoggedOut, Layout } from "components";
 
-export default App;
+const App = ({ isAuthenticated }) => {
+  return isAuthenticated ? <LoggedIn /> : <LoggedOut />;
+};
+
+const mapStateToProps = ({ auth }) => ({
+  isAuthenticated: auth.isAuthenticated,
+  authAttempted: auth.authAttempted,
+});
+
+export default connect(mapStateToProps)(App);

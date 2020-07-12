@@ -5,6 +5,6 @@ export default {
   add: (title, columnId) =>
     axios.post("/tasks", {
       title: title,
-      columnId: columnId
-    })
+      columnId: columnId,
+    }),
 };
